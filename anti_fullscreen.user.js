@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         azota_anti_fullscreen
-/
 // @version      2025-12-19
 // @description  Disable Azota's fullscreen force.
 // @author       kaede

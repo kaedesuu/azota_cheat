@@ -47,7 +47,7 @@
       )();
 
     // It seems like the above is a string, we need to use castJsonToObj function provided by Azota.
-    /* They are way too many castJsonToObj functions.
+    /* There are way too many castJsonToObj functions.
     How did I know the right one? Well, take a look at line #49981 in main.js script (of Azota)
     this.hashExtractTemplate = this.commonService.castJsonToObj(this.commonService.getContentHashConfigSystem()) ?? []
 
