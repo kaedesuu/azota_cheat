@@ -5,7 +5,7 @@ it took a little bit of time for me to reverse engineering this web application.
 # encryption
 To talk about `encryption`, Azota has encrypted their API and confuse users or people who do reverse engineering by saying `hash`, it's more like `encryption` to me.
 You can read the full explanation how I decrypted those data in the `azota_encode_decode_module.js` script,\
-If you are confused at those random number like `wpRequire(87941)` or `wpRequire(30598)`, that's the chunk number of where the function is stored inside the azota's web application code.\
+If you are confused at those random number like `wpRequire(87941)` or `wpRequire(30598)`, that's the chunk number of where the function is stored inside the azota's web application code.
 
 By using these functions below, you can read encrypted content:
 ```js
