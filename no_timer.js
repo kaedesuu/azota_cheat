@@ -1,5 +1,5 @@
 // line 43238: this.currentTakeTestStepData.countDownSecond = Infinity; (could lead to Infinity time)
-// but that method is not possible since they are wrapped in a function (so you can't access inner scope's variable). So inject into API.
+// but that method is not possible since they are wrapped in a function (since you can't access inner scope's variable)... so hook into the API instead
 // the line 43238 is in 140.8682c63b1b18e3bf.js
 
 (() => {
@@ -26,7 +26,7 @@
 
   // wpRequire(30598).R.prototype.getContentHashConfigSystem()
   // ERROR: can't access property "resultContentSupport", this.gzipHelper is undefined
-  // I found solution to this error, is by finding the first class (yes and I found it, right now you can see that gzipHelper variable is up there).
+  // the solution to this error can be fixed by finding the first class (yes and I found it, you can see that gzipHelper on the line above).
 
   const str_hashExtractTemplate =
     wpRequire(30598).R.prototype.getContentHashConfigSystem.bind(
@@ -38,12 +38,12 @@
     How did I know the right one? Well, take a look at line #49981 in main.js script (of Azota)
     this.hashExtractTemplate = this.commonService.castJsonToObj(this.commonService.getContentHashConfigSystem()) ?? []
 
-    the getContentHashConfigSystem() make me realize that castJsonToObj should be the same, because they are in the same `this.commonSerice`
+    the getContentHashConfigSystem() makes me realize that castJsonToObj should be the same, because they are in the same `this.commonSerice`
   */
   const hashExtractTemplate =
     wpRequire(30598).R.prototype.castJsonToObj.bind(env_gzipHelper)(
       str_hashExtractTemplate,
-    ) ?? []; // i need to make them all the same, and matches logic (so copy the "?? []")
+    ) ?? []; // i need to make them all the same, and match the original logic condition (so copy the "?? []" from their code)
 
   const env_hashExtractTemplate = {
     hashExtractTemplate: hashExtractTemplate,
@@ -55,7 +55,7 @@
     },
   }; // Create a fake this.hashExtractTemplate for .bind(), .bind() function will read the variable inside and turn into "this variable
 
-  // Now you can encode and decode the content, you can use `window._encode_` and `window._decode_` in your browser's console now!!!
+  // a private function for encode and decode
   const _encode = (str) =>
     wpRequire(98230).w.prototype.encode.bind(env_hashExtractTemplate)(str);
   const _decode = (str) =>
