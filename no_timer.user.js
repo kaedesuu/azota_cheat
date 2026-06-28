@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         azota_notimer
-/
 // @version      2025-12-19
 // @description  Disable Azota's timer.
 // @author       kaede
