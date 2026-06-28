@@ -7,7 +7,7 @@ Azota has encrypted their API to confuse users or people who do reverse engineer
 You can read the full explanation of how I decrypted those data in the `azota_encode_decode_module.js` script,\
 If you are confused at those random numbers like `wpRequire(87941)` or `wpRequire(30598)`, that's the chunk number of where the function is stored inside the azota's web application code.
 
-By using these functions below, you can read encrypted content:
+By using these functions below, you can read the encrypted content:
 ```js
 window._encode_(str)
 window._decode_(str)
