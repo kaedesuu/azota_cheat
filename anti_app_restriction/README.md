@@ -1,6 +1,6 @@
 # anti_app_restriction
 > [!note]
-> - description: bypass azota's app restriction and allow you to take the test on web without installing their app
+> - description: bypass azota's app restriction and allow you to take/join the test on web without installing their app
 > - usage: just install the tampermonkey script and take the test
 
 To install the script, you need to:

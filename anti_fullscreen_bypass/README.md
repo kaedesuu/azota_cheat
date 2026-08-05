@@ -9,5 +9,5 @@ To install the script, you need to:
 3. press `Install`
 
 ## structure
-- [./anti_fullscreen.js](./anti_fullscreen.js): the main file, not minified.
-- [./anti_fullscreen.user.js](./anti_fullscreen.user.js): use for tampermonkey userscript.
+- [./anti_fullscreen_bypass.js](./anti_fullscreen_bypass.js): the main file, not minified.
+- [./anti_fullscreen_bypass.user.js](./anti_fullscreen_bypass.user.js): use for tampermonkey userscript.
