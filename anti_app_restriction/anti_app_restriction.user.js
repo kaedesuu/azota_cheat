@@ -4,7 +4,7 @@
 // @version      2026-08-05
 // @description  bypass azota's app restriction and allow you to take the test on web without installing their app
 // @author       kaedesuu
-// @match        https://azota.vn/*/test/take-test/*
+// @include      /^https?:\/\/azota\.vn\/.*\/test\/take-test\/.*$/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=azota.vn
 // @license      GPL-3.0
 // @grant        none

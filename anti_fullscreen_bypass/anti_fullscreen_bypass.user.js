@@ -4,7 +4,7 @@
 // @version      2025-12-19
 // @description  Disable Azota's fullscreen force.
 // @author       kaede
-// @match        https://azota.vn/*/test/take-test/*
+// @include      /^https?:\/\/azota\.vn\/.*\/test\/take-test\/.*$/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=azota.vn
 // @license      GPL-3.0
 // @grant        none
