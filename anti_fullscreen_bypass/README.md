@@ -5,7 +5,7 @@
 
 To install the script, you need to:
 1. install tampermonkey
-2. click on the raw link: 
+2. **click on the raw link:** https://github.com/kaedesuu/azota_cheat/raw/refs/heads/main/anti_fullscreen_bypass/anti_fullscreen_bypass.user.js
 3. press `Install`
 
 ## structure
