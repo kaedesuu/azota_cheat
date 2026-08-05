@@ -6,8 +6,11 @@
   const original_xhr = window.XMLHttpRequest;
   const original_fetch = window.fetch;
 
+  // webpack name (azota changes the name very frequently)
+  const azt_webpackname = Object.keys(window).find((el) => el?.toString().toLowerCase().replaceAll(" ", "").includes("webpack"));
+
   // Webpack require
-  let wpRequire = window.webpackChunkCoreMod.push([[Symbol()], {}, (r) => r]); // Thanks to aamia's CompleteDiscordQuest.md script!!
+  let wpRequire = window[azt_webpackname].push([[Symbol()], {}, (r) => r]); // Thanks to aamia's CompleteDiscordQuest.md script!! 
   const gzipHelper = wpRequire(87941).f.prototype; // On the chunk #87941
 
   // resultContentSupport seems to miss the `this` variable, that's why it run the catch {} block, and return the whole string instead of doing its job.
