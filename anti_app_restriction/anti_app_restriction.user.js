@@ -2,7 +2,7 @@
 // @name         anti_app_restriction
 // @namespace    https://github.com/kaedesuu/azota_cheat/
 // @version      2026-08-05
-// @description  bypass azota's app restriction and allow you to take the test on web without installing their app
+// @description  bypass azota's app restriction, and allow you to take a test on web without requiring the azota student app.
 // @author       kaedesuu
 // @include      /^https?:\/\/azota\.vn\/.*\/test\/take-test\/.*$/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=azota.vn

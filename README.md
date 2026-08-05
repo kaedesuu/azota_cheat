@@ -5,7 +5,7 @@ it took a little bit of time for me to reverse engineer this web application. Th
 # installation
 1. install userscripts extension. I recommend using tampermonkey.
 2. install the scripts:
-- [anti_app_restriction](./anti_app_restriction/README.md): bypass Azota's app restriction feature, which requires you to have a phone and install their app to take the test.
+- [anti_app_restriction](./anti_app_restriction/README.md): bypass azota's app restriction, and allow you to take a test on web without requiring the azota student app.
 - [anti_fullscreen_bypass](./anti_fullscreen_bypass/README.md): bypass Azota's force fullscreen feature, and this script allows you to bypass that feature. Even if you switch between tabs or windows, teacher **will NOT notice that you are cheating**.
 - [no_timer](./no_timer/README.md): makes time infinite so you can submit the answer at anytime. **(NOTE: if teacher stops the test or close it, you won't be able to submit the answer, so DON'T USE this in a serious test/exam).**
 3. you can take a test or do homework on azota after the installation.
